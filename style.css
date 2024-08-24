@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("pexels-scottwebb-137594.jpg") no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack tasks in a column */
+    align-items: center;
+}
+
+.m {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 320px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+}
+
+.m::placeholder {
+    color: black;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mb {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 120px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: burlywood;
+    font-size: 16px;
+}
+
+.mb:hover {
+    background-color: orange;
+}
+
+.addedTasks {
+    display: flex;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.l {
+    background-color: blanchedalmond;
+    width: 400px;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.up, .down {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.up:hover, .down:hover {
+    background-color: orange;
+}
+
+.checkbox {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 15px solid black;
+    accent-color: greenyellow;
+}
+
+.bin {
+    background-image: url("bin.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    border: 3px solid;
+}
+
+.bin:hover {
+    background-color: red;
+}
+
+/* Media Query for Phones */
+@media screen and (max-width: 600px) {
+    .l{
+        width: 120px;
+        font-size: 13px;
+        padding-top: 18px;
+    }
+    .m {
+        width: 210px;
+    }
+    
+}
